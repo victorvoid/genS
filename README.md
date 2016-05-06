@@ -52,6 +52,8 @@ PC 4GB de RAM, i3.
 
     Ordenando de acordo com o K (memória disponível)
 
+![](https://raw.githubusercontent.com/VictorVoid/gerador-e-ordenador/master/res/graficodetempo.png)
+
 Membros
 ----
 - Victor Igor Gomes Martins - 140921 
