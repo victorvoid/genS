@@ -22,7 +22,9 @@ O projeto visa implementar em alto nível um algoritmo que tem a função de ord
 
 ###Complexidade
 
-- Pior caso: **O** nlog(n)
+- A altura da árvore de execução pode ser definida por O(log n).
+- A quantidade de operações em cada nível da árvore de execução é definidade por O(n).
+- Logo, a complexidade do algoritmo para qualquer caso é O(n log n).
 
 # Como compilar e executar
 
