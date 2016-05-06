@@ -57,7 +57,7 @@ PC 4GB de RAM, i3.
 
 Membros
 ----
-- Victor Igor Gomes Martins - 140921 
-- Luciano de Oliveira Leite - 140616
-- Everton Guilherme Machado Guerreiro - 140911
-- Marcus Gabriel de Lima Soares - 120865
+- Victor Igor Gomes Martins - 140921 - [victorvoid](https://github.com/VictorVoid)
+- Luciano de Oliveira Leite - 140616 
+- Everton Guilherme Machado Guerreiro - 140911 [ewertonguerreiro](https://github.com/evertonguerreiro)
+- Marcus Gabriel de Lima Soares - 120865 - [MarcusGabriel](https://github.com/MarcusGabriel)
