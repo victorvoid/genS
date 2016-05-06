@@ -9,7 +9,8 @@
 - [Contribuidores (membros)](#membros)
 
 # Objetivo
-(...)
+
+O projeto visa implementar em alto nível um algoritmo que tem a função de ordenar arquivos que não cabem na memória principal do computador. Sendo assim, é preciso utilizar um algoritmo de ordenação externa para armazenar os arquivos em memória auxiliar. Para ordenar um arquivo de dados fornecido como entrada, o método de ordenação a ser utilizado será o Merge-Sort, e a estratégia será combinar vários blocos de arquivos ordenados em um único bloco de arquivo ordenado (intercalação).
 
 # dev
 
