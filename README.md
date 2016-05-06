@@ -5,6 +5,7 @@
 - [Qual o objetivo ?](#objetivo)
 - [Algumas descrições do projeto](#dev)
 - [Como compilar e executar](#como-compilar-e-executar)
+- [Experimentos](#experimentos)
 - [Contribuidores (membros)](#membros)
 
 # Objetivo
@@ -37,9 +38,19 @@ Primeiro parâmetro é o nome do arquivo, e o segundo o TAMANHO EM MB
 
 Para ordenar execute:
 
-> ./ordenaArquivo primeiroPARAMETRO segundoPARAMETRO terceiroPARAMETRO quartoPARAMETRO
+> ./msort primeiroPARAMETRO segundoPARAMETRO terceiroPARAMETRO quartoPARAMETRO
 
 Primeiro parâmetro é o **nome do arquivo** que deseja ordenar, segundo é o **nome de saída**, terceiro a quantidade total de **memória** disponível para a ordenação, e o quarto o **K** (número de vias usadas pelo Merge-sort).
+
+# Experimentos
+
+    Gerando um arquivo de 6GB
+
+Durou um tempo médio de ``64.4198s``. 
+
+PC 4GB de RAM, i3.
+
+    Ordenando de acordo com o K (memória disponível)
 
 Membros
 ----
