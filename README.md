@@ -57,7 +57,7 @@ Durou um tempo médio de ``64.4198s``.
 
 PC 4GB de RAM, i3.
 
-    Ordenando de acordo com o K (memória disponível)
+    Ordenando de acordo com a memória disponível
 
 ![](https://raw.githubusercontent.com/VictorVoid/gerador-e-ordenador/master/res/graficodetempo.png)
 
