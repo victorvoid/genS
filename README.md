@@ -20,6 +20,10 @@ O projeto visa implementar em alto nível um algoritmo que tem a função de ord
 2. Bibliotecas usadas: `stdlib.h`, `stdio.h`, `stdint.h`, `math.h`, `string.h`, `unistd.h` e `time.h`.
 3. Estrutura de Dados: `Pilha`.
 
+###Complexidade
+
+- Pior caso: **O** nlog(n)
+
 # Como compilar e executar
 
 O processo é a forma simples de compilação de arquivos em C utilizando o [gcc](https://gcc.gnu.org/).
