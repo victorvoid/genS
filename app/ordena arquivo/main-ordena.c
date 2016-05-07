@@ -1,7 +1,8 @@
-#include "headers/ordenar_arquivo.h"
+#include "headers/ordena-header.h"
 
 int32_t main(int32_t argc, char *argv[])
 {
+
 	if (argc != 5)
 	{
 		printf("OPA, ocorreu um erro, verifique se os parâmetros estão sendo passados corretamente!");
@@ -9,13 +10,13 @@ int32_t main(int32_t argc, char *argv[])
 	}
 	else
 	{
-		int32_t memoria = atoi(argv[3]) * MB;
 		const int32_t K = atoi(argv[4]);
+		int32_t memoria = atoi(argv[3]) * MB;
 		FILE *fp = fopen(argv[1], "rb");
 		clock_t inicio, fim;
-		unsigned long arquivoEntradaTAM = getTamArquivo(fp);
 		inicio = clock();
 		KFile *arquivos = geraLinhas(fp, memoria, K);
+		unsigned long arquivoEntradaTAM = getTamArquivo(fp);
 		int32_t output_file_index = interpola(arquivos, arquivoEntradaTAM, memoria, K);
 		fim = clock();
 		double tempoGasto = (double) (fim - inicio) / CLOCKS_PER_SEC;
