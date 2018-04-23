@@ -1,69 +1,59 @@
-# Gerador de números aleatórios e Ordenador
+# genS
 
 ![C](https://img.shields.io/badge/language-c-green.svg?style=flat-square)
 
-- [Qual o objetivo ?](#objetivo)
-- [Algumas descrições do projeto](#dev)
-- [Como compilar e executar](#como-compilar-e-executar)
-- [Experimentos](#experimentos)
-- [Contribuidores (membros)](#membros)
+- [Objective](#objective)
+- [Some project descriptions](#dev)
+- [How to compile and run](#how-to-compile-and-run)
+- [Experiments](#experiments)
 
-# Objetivo
+# Objective
 
-O projeto visa implementar em alto nível um algoritmo que tem a função de ordenar arquivos que não cabem na memória principal do computador. Sendo assim, é preciso utilizar um algoritmo de ordenação externa para armazenar os arquivos em memória auxiliar. Para ordenar um arquivo de dados fornecido como entrada, o método de ordenação a ser utilizado será o Merge-Sort, e a estratégia será combinar vários blocos de arquivos ordenados em um único bloco de arquivo ordenado (intercalação).
+The project aims to implement a high level algorithm that has the function of ordering files that do not fit into the main memory of the computer. Therefore, it is necessary to use an external sorting algorithm to store the files in auxiliary memory. To sort a given data file as input, the sorting method to use will be Merge-Sort, and the strategy will be to combine multiple ordered file units into a single sorted file block (merge).
 
 # dev
 
-    Algumas descrições do projeto:
+1. The C language was used for implementation.
+2. Used libraries: `stdlib.h`, `stdio.h`, `stdint.h`, `math.h`, `string.h`, `unistd.h` e `time.h`.
+3. Data structure: `Stack`.
 
-1. Foi utilizada a linguagem C para a implementação.
-2. Bibliotecas usadas: `stdlib.h`, `stdio.h`, `stdint.h`, `math.h`, `string.h`, `unistd.h` e `time.h`.
-3. Estrutura de Dados: `Pilha`.
+### Complexity
 
-###Complexidade
+- The height of the execution tree can be defined by O (log n)..
+- The number of operations at each level of the execution tree is defined by O (n).
+- Therefore, the complexity of the algorithm for any case is O (n log n).
 
-- A altura da árvore de execução pode ser definida por O(log n).
-- A quantidade de operações em cada nível da árvore de execução é definidade por O(n).
-- Logo, a complexidade do algoritmo para qualquer caso é O(n log n).
+# How to compile and run
 
-# Como compilar e executar
+The process is the simple way to compile C files using [gcc](https://gcc.gnu.org/).
 
-O processo é a forma simples de compilação de arquivos em C utilizando o [gcc](https://gcc.gnu.org/).
+To facilitate typing, the project has the Makefile to execute the command for you.
 
-Para facilitar a digitacao, o projeto possui o Makefile para executar o comandoo por você.
+To use it just type ** make ** on your terminal at the file location. Then choose the one you want to run first:
 
-Para usa-lo apenas digite **make** no seu terminal no local do arquivo. Em seguida escolha o que quer executar primeiro:
+1. Generate a random number file
+2. Sort values within a file
 
-1. Gerar um arquivo de número aleatório
-2. Ordenar os valores dentro de um arquivo
-
-Para gerar um arquivo, execute:
+To generate a file, run:
 
 > ./gerarArquivo primeiroPARAMETRO segundoPARAMETRO
 
-Primeiro parâmetro é o nome do arquivo, e o segundo o TAMANHO EM MB
+First parameter is the name of the file, and the second is the SIZE IN MB
 
-Para ordenar execute:
+To sort execute:
 
 > ./msort primeiroPARAMETRO segundoPARAMETRO terceiroPARAMETRO quartoPARAMETRO
 
-Primeiro parâmetro é o **nome do arquivo** que deseja ordenar, segundo é o **nome de saída**, terceiro a quantidade total de **memória** disponível para a ordenação, e o quarto o **K** (número de vias usadas pelo Merge-sort).
+First parameter is the ** filename ** that you want to sort, second is the ** output name **, third the total amount of ** memory ** available for sorting, and the fourth the ** K ** (number of routes used by Merge-sort).
 
-# Experimentos
+# Experiments
 
-    Gerando um arquivo de 6GB
-
-Durou um tempo médio de ``64.4198s``. 
+## Generating a 6GB file
+    
+It lasted an average time of `` 64.4198s``.
 
 PC 4GB de RAM, i3.
 
-    Ordenando de acordo com a memória disponível
+## Sorting according to available memory
 
-![](https://raw.githubusercontent.com/VictorVoid/gerador-e-ordenador/master/res/graficodetempo.png)
-
-Membros
-----
-- Victor Igor Gomes Martins - 140921 - [victorvoid](https://github.com/VictorVoid)
-- Luciano de Oliveira Leite - 140616 
-- Everton Guilherme Machado Guerreiro - 140911 [ewertonguerreiro](https://github.com/evertonguerreiro)
-- Marcus Gabriel de Lima Soares - 120865 - [MarcusGabriel](https://github.com/MarcusGabriel)
+![](https://raw.githubusercontent.com/VictorVoid/genS/master/res/graficodetempo.png)
