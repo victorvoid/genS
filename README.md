@@ -53,7 +53,3 @@ First parameter is the ** filename ** that you want to sort, second is the ** ou
 It lasted an average time of `` 64.4198s``.
 
 PC 4GB de RAM, i3.
-
-## Sorting according to available memory
-
-![](https://raw.githubusercontent.com/VictorVoid/genS/master/res/graficodetempo.png)
